@@ -1,20 +1,11 @@
-# Bot
+# Slack echo bot example
 
-**TODO: Add description**
+## Usage on OSX
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add bot to your list of dependencies in `mix.exs`:
-
-        def deps do
-          [{:bot, "~> 0.0.1"}]
-        end
-
-  2. Ensure bot is started before your application:
-
-        def application do
-          [applications: [:bot]]
-        end
-
+```bash
+  $ brew update && brew install elixir
+  $ git clone git@github.com:ivanvotti/bot.git
+  $ cd bot
+  $ mix deps.get && mix escript.build
+  $ ./bot --token <token>
+```
